@@ -32,4 +32,5 @@ jobs:
           with:
             heroku_api_key: ${{secrets.HEROKU_API_KEY}}
             heroku_app_name: "full-stack-open-pokedex" #Must be unique in Heroku
-            heroku_email: "pyry.lehtonen7.7@gmail.com
+            heroku_email: "pyry.lehtonen7.7@gmail.com"
+            healthcheck: "https://full-stack-open-pokedex.herokuapp.com/health"
