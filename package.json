@@ -1,5 +1,8 @@
 {
   "name": "fullstackopen-cicd",
+  "jest": {
+    "testPathIgnorePatterns": ["cypress"]
+  },
   "version": "1.0.0",
   "description": "Full Stack Open",
   "main": "src/index.js",
