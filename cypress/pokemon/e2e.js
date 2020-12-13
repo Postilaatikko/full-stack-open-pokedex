@@ -8,10 +8,3 @@ describe('Pokedex', () => {
   })
 })
 
-describe('Pokedex', () => {
-  it('pokepage can be navigated to', () => {
-    cy.visit('http://localhost:5000')
-    cy.contains('ivysaur').click()
-    cy.contains('chlorophyll')
-  })
-})
