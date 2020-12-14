@@ -1,5 +1,5 @@
 name: Deployment pipeline
-if: ${{ github.event_name == 'push' }}
+
 on:
   push:
     branches:
@@ -11,6 +11,7 @@ on:
 jobs:
   simple_deployment_pipeline:
     runs-on: ubuntu-18.04
+    if: ${{ github.event_name == 'push' }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
