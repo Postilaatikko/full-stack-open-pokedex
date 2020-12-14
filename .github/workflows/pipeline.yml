@@ -1,5 +1,5 @@
 name: Deployment pipeline
-if: ${{ github.event_name == 'push' }}
+
 on:
   push:
     branches:
@@ -14,6 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
+      if: ${{ github.event_name == 'push' }}
         with:
           node-version: '12.x'
       - name: npm install 
